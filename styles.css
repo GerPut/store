@@ -1,6 +1,8 @@
 :root {
     --color-one: #fff;
     --color-two: #666;
+    --color-three: rgb(248, 88, 88);
+    --color-four: rgb(56, 184, 56);
 }
 
 * {
@@ -41,36 +43,8 @@
     background-color: grey;
 }
 
-.sub input {
-    height: 3rem;
-    width: 50%;
-    color: black;
-    outline: none;
-    padding: 10px;
-}
-
-.btn1 {
-    height: 3rem;
-    width: 50%;
-    color: white;
-    background-color: yellowgreen;
-    outline: none;
-    border: none;
-    margin-left: -2px;
-}
-
-.btn1:hover {
-    background-color: black;
-    color: white;
-    transition: 0.8s;
-}
-
-.fas {
-    font-size: 2rem;
-}
-
 .collection span {
-    color: yellowgreen;
+    color: var(--color-three);
     font-size: 2rem;
     font-weight: 800;
     padding-left: 5px;
@@ -84,7 +58,7 @@
     position: absolute;
     height: 3rem;
     width: 8rem;
-    background-color: yellowgreen;
+    background-color: var(--color-three);
     color: white;
     border-radius: 5px;
     outline: none;
@@ -100,7 +74,7 @@
 }
 
 .collection input:hover {
-    background-color: grey;
+    background-color: var(--color-four);
     transition: 0.5s;
 }
 
