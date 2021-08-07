@@ -26,22 +26,85 @@
 
 /* CAROUSEL */
 
-.carousel-inner>.item>img {
-    width: 640px;
-    height: 360px;
+.carousel .item {
+    height: 300px;
 }
 
-/* SECTION */
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
 
-@media (min-width:768px) {
-    .news-input {
-        width: 50%;
+.btn-color {
+    background: #000;
+    color: #fff;
+}
+
+.btn-color:hover {
+    color: #fff;
+}
+
+/* Wobble Vertical */
+
+@-webkit-keyframes slide-btn {
+    16.65% {
+        transform: translateY(8px);
+    }
+    33.3% {
+        transform: translateY(-6px);
+    }
+    49.95% {
+        transform: translateY(4px);
+    }
+    66.6% {
+        transform: translateY(-2px);
+    }
+    83.25% {
+        transform: translateY(1px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
-.sub {
-    background-color: grey;
+@keyframes slide-btn {
+    16.65% {
+        transform: translateY(8px);
+    }
+    33.3% {
+        transform: translateY(-6px);
+    }
+    49.95% {
+        transform: translateY(4px);
+    }
+    66.6% {
+        transform: translateY(-2px);
+    }
+    83.25% {
+        transform: translateY(1px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
+
+.slide-btn {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.slide-btn:hover, .slide-btn:focus, .slide-btn:active {
+    animation-name: slide-btn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+/* SECTION */
 
 .collection span {
     color: var(--color-three);
@@ -102,4 +165,10 @@
     color: #fff;
     border-radius: 5px;
     ;
+}
+
+/* SECTION 5 */
+
+.scroller {
+    background-color: var(--color-three);
 }
