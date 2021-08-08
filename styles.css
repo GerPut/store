@@ -1,7 +1,7 @@
 :root {
     --color-one: #fff;
     --color-two: #666;
-    --color-three: rgb(248, 88, 88);
+    --color-three: #D6041D;
     --color-four: rgb(56, 184, 56);
 }
 
@@ -22,6 +22,10 @@
     color: #000;
     font-size: 2rem;
     font-weight: 800;
+}
+
+.navbar-brand-letters {
+    color: var(--color-three)
 }
 
 /* CAROUSEL */
@@ -104,7 +108,15 @@
     animation-iteration-count: 1;
 }
 
-/* SECTION */
+/* SECTION 1 */
+
+@media(min-width:768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
+/* SECTION 2 */
 
 .collection span {
     color: var(--color-three);
@@ -118,21 +130,17 @@
 }
 
 .collection input {
-    position: absolute;
-    height: 3rem;
-    width: 8rem;
+    margin-bottom: 7px;
+    height: 2rem;
+    width: 6rem;
     background-color: var(--color-three);
     color: white;
     border-radius: 5px;
     outline: none;
     border: none;
     text-align: center;
-    top: 50%;
+    top: 100%;
     left: 30%;
-    opacity: 0;
-}
-
-.collection .card:hover input {
     opacity: 1;
 }
 
