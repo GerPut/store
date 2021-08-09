@@ -1,3 +1,6 @@
+// AOS
+AOS.init();
+
 //Bitcoin Price Displayer
 
 const display = document.getElementById('btc-price')
@@ -57,7 +60,9 @@ function countdown() {
 
 }
 
-//initial call
+//Initial call
 countdown();
 
 setInterval(countdown, 1000);
+
+
